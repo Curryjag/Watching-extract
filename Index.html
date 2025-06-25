@@ -17,6 +17,8 @@
       max-width: 700px;
       margin: auto;
       box-shadow: 0 0 10px rgba(0,0,0,0.8);
+      word-wrap: break-word;
+      overflow-wrap: break-word;
     }
     h2 {
       color: #00ffcc;
@@ -54,6 +56,37 @@
       margin-top: 30px;
       font-size: 0.9em;
       color: #888;
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .btn {
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    }
+    .btn-green {
+      background-color: #00cc66;
+      color: white;
+      box-shadow: 0 0 8px rgba(0,255,150,0.6);
+    }
+    .btn-green:hover {
+      background-color: #00b359;
+    }
+    .btn-red {
+      background-color: #cc3333;
+      color: white;
+      box-shadow: 0 0 8px rgba(255,50,50,0.5);
+    }
+    .btn-red:hover {
+      background-color: #b32d2d;
     }
   </style>
 </head>
@@ -106,30 +139,35 @@
           <th>Status</th>
         </tr>
         <tr>
-          <td>May 17</td>
+          <td>June 17</td>
           <td>IN</td>
           <td>150 USDT</td>
           <td>Confirmed</td>
         </tr>
         <tr>
-          <td>May 22</td>
+          <td>June 22</td>
           <td>IN</td>
           <td>300 USDT</td>
           <td>Confirmed</td>
         </tr>
         <tr>
-          <td>May 25</td>
+          <td>June 23</td>
           <td>IN</td>
           <td>600 USDT</td>
           <td>Confirmed</td>
         </tr>
         <tr>
-          <td>May 26</td>
+          <td>June 24</td>
           <td>OUT</td>
           <td>25.12 USDT</td>
           <td>Sent</td>
         </tr>
       </table>
+    </div>
+
+    <div class="button-container">
+      <button class="btn btn-green">✅ Proceed with Extraction</button>
+      <button class="btn btn-red">❌ Abort Extraction</button>
     </div>
 
     <div class="footer">
